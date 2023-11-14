@@ -1,4 +1,4 @@
-# ResistanceCalculator
+# Resistance Calculator
 
 This program can be used to work out the resistor you need for a circuit based on the 'Ohms Law' calculation.
 
