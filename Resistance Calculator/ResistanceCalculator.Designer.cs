@@ -36,10 +36,12 @@
       this.resistanceInput = new System.Windows.Forms.TextBox();
       this.bandOne = new System.Windows.Forms.Label();
       this.bandTwo = new System.Windows.Forms.Label();
-      this.bandThree = new System.Windows.Forms.Label();
       this.bandMultiplier = new System.Windows.Forms.Label();
-      this.bandTolerance = new System.Windows.Forms.Label();
       this.buttonCalculate = new System.Windows.Forms.Button();
+      this.label4 = new System.Windows.Forms.Label();
+      this.label5 = new System.Windows.Forms.Label();
+      this.label6 = new System.Windows.Forms.Label();
+      this.label7 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // label1
@@ -93,47 +95,27 @@
       // bandOne
       // 
       this.bandOne.AutoSize = true;
-      this.bandOne.Location = new System.Drawing.Point(39, 121);
+      this.bandOne.Location = new System.Drawing.Point(75, 135);
       this.bandOne.Name = "bandOne";
-      this.bandOne.Size = new System.Drawing.Size(55, 13);
+      this.bandOne.Size = new System.Drawing.Size(0, 13);
       this.bandOne.TabIndex = 6;
-      this.bandOne.Text = "Band One";
+      this.bandOne.Click += new System.EventHandler(this.bandOne_Click);
       // 
       // bandTwo
       // 
       this.bandTwo.AutoSize = true;
-      this.bandTwo.Location = new System.Drawing.Point(100, 121);
+      this.bandTwo.Location = new System.Drawing.Point(163, 135);
       this.bandTwo.Name = "bandTwo";
-      this.bandTwo.Size = new System.Drawing.Size(56, 13);
+      this.bandTwo.Size = new System.Drawing.Size(0, 13);
       this.bandTwo.TabIndex = 7;
-      this.bandTwo.Text = "Band Two";
-      // 
-      // bandThree
-      // 
-      this.bandThree.AutoSize = true;
-      this.bandThree.Location = new System.Drawing.Point(162, 121);
-      this.bandThree.Name = "bandThree";
-      this.bandThree.Size = new System.Drawing.Size(63, 13);
-      this.bandThree.TabIndex = 8;
-      this.bandThree.Text = "Band Three";
       // 
       // bandMultiplier
       // 
       this.bandMultiplier.AutoSize = true;
-      this.bandMultiplier.Location = new System.Drawing.Point(285, 121);
+      this.bandMultiplier.Location = new System.Drawing.Point(314, 135);
       this.bandMultiplier.Name = "bandMultiplier";
-      this.bandMultiplier.Size = new System.Drawing.Size(48, 13);
+      this.bandMultiplier.Size = new System.Drawing.Size(0, 13);
       this.bandMultiplier.TabIndex = 9;
-      this.bandMultiplier.Text = "Multiplier";
-      // 
-      // bandTolerance
-      // 
-      this.bandTolerance.AutoSize = true;
-      this.bandTolerance.Location = new System.Drawing.Point(352, 121);
-      this.bandTolerance.Name = "bandTolerance";
-      this.bandTolerance.Size = new System.Drawing.Size(55, 13);
-      this.bandTolerance.TabIndex = 10;
-      this.bandTolerance.Text = "Tolerance";
       // 
       // buttonCalculate
       // 
@@ -145,15 +127,55 @@
       this.buttonCalculate.UseVisualStyleBackColor = true;
       this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
       // 
+      // label4
+      // 
+      this.label4.AutoSize = true;
+      this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.label4.Location = new System.Drawing.Point(165, 100);
+      this.label4.Name = "label4";
+      this.label4.Size = new System.Drawing.Size(125, 13);
+      this.label4.TabIndex = 12;
+      this.label4.Text = "Band Colour Scheme";
+      this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+      // 
+      // label5
+      // 
+      this.label5.AutoSize = true;
+      this.label5.Location = new System.Drawing.Point(314, 122);
+      this.label5.Name = "label5";
+      this.label5.Size = new System.Drawing.Size(48, 13);
+      this.label5.TabIndex = 15;
+      this.label5.Text = "Multiplier";
+      // 
+      // label6
+      // 
+      this.label6.AutoSize = true;
+      this.label6.Location = new System.Drawing.Point(163, 122);
+      this.label6.Name = "label6";
+      this.label6.Size = new System.Drawing.Size(56, 13);
+      this.label6.TabIndex = 14;
+      this.label6.Text = "Band Two";
+      // 
+      // label7
+      // 
+      this.label7.AutoSize = true;
+      this.label7.Location = new System.Drawing.Point(75, 122);
+      this.label7.Name = "label7";
+      this.label7.Size = new System.Drawing.Size(55, 13);
+      this.label7.TabIndex = 13;
+      this.label7.Text = "Band One";
+      // 
       // ResistanceCalculator
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(447, 164);
+      this.Controls.Add(this.label5);
+      this.Controls.Add(this.label6);
+      this.Controls.Add(this.label7);
+      this.Controls.Add(this.label4);
       this.Controls.Add(this.buttonCalculate);
-      this.Controls.Add(this.bandTolerance);
       this.Controls.Add(this.bandMultiplier);
-      this.Controls.Add(this.bandThree);
       this.Controls.Add(this.bandTwo);
       this.Controls.Add(this.bandOne);
       this.Controls.Add(this.resistanceInput);
@@ -179,10 +201,12 @@
     private System.Windows.Forms.TextBox resistanceInput;
     private System.Windows.Forms.Label bandOne;
     private System.Windows.Forms.Label bandTwo;
-    private System.Windows.Forms.Label bandThree;
     private System.Windows.Forms.Label bandMultiplier;
-    private System.Windows.Forms.Label bandTolerance;
     private System.Windows.Forms.Button buttonCalculate;
+    private System.Windows.Forms.Label label4;
+    private System.Windows.Forms.Label label5;
+    private System.Windows.Forms.Label label6;
+    private System.Windows.Forms.Label label7;
   }
 }
 
