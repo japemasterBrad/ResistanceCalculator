@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing.Text;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Resistance_Calculator
 {
@@ -36,8 +31,6 @@ namespace Resistance_Calculator
         bandsArray[Convert.ToString(valueDividedByMultiplier).IndexOf(convertCharToString)] = bandCalculation;
       }
       bandsArray[3] = CalculateMultiplier(Convert.ToString(multiplier));
-
-      //bandsArray[2] = "black";
 
       _resistor.BandOne = bandsArray[0];
       _resistor.BandTwo = bandsArray[1];
